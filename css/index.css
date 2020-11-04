@@ -1,12 +1,24 @@
+/* 	
+	732426 Inactive Red
+	332F31 Grey
+	BD0B11 Active Red
+	C8C8C8 Text Grey
+*/
+
 div.navbar {
-	background-image: linear-gradient(rgb(189, 11, 17), rgb(130, 0, 3));
+
+	/* background-image: linear-gradient(#BD0B11, #820003); */
+	background-color: #732426;
+	
 	margin: auto;
 	margin-top: 2%;
 	overflow: hidden;
-	height: 200px;
+	
+	height: 75px;
 	width: 65%;
+	
 	border-radius: 15px;
-	border-color: #530406;
+	border-color: #732426;
 	border-style: solid;
 	border-width: 3px;
 }
@@ -15,18 +27,28 @@ div.navbar {
 
 	position: relative;
 	float: left;
-	text-align: center;
-	align-items: center;
-	padding: 10% 0;
+
+	padding: 2.5% 0;
 	height: inherit;
 	width: 33%;
 	box-sizing: border-box;
 
+	transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+	text-align: center;
+	align-items: center;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	text-shadow: 0 0 5px #000000;
+
+	color: #C8C8C8;
 }
 
 .navbar a:hover {
 
-	background-color: rgb(0, 0, 0)
+	background-color: #BD0B11;
+	/* color: #000000; */
 
 }
 
@@ -34,20 +56,13 @@ div.navbar {
 
 	position: relative;
 	float: left;
-	margin: 2.5% 0;
-	height: 150px;
+	
+	margin: 1.25% 0;
+	height: 75px;
 	width: 0.5%;
-	background-color: #530406;
+	
+	background-color: #732426;
+	
 	border-radius: 50px;
 
 }
-
-div.taskbar-slot {
-
-
-
-}
-
-/* 	BD0B11 red
-	332F31 grey
-*/
