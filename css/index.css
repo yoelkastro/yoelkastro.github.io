@@ -5,22 +5,29 @@
 	C8C8C8 Text Grey
 */
 
-div.navbar {
+div.panel {
 
-	/* background-image: linear-gradient(#BD0B11, #820003); */
 	background-color: #732426;
 	
 	margin: auto;
-	margin-top: 2%;
 	overflow: hidden;
-	
-	height: 75px;
-	width: 65%;
-	
+
 	border-radius: 15px;
 	border-color: #732426;
 	border-style: solid;
 	border-width: 3px;
+
+}
+
+div.navbar {
+
+	/* background-image: linear-gradient(#BD0B11, #820003); */
+	
+	margin-top: 2%;
+	
+	height: 75px;
+	width: 65%;
+	
 }
 
 .navbar a {
