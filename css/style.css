@@ -5,9 +5,17 @@
 	C8C8C8 Text Grey
 */
 
+:root {
+
+	--panel-inactive: 	#732426;
+	--panel-active: 	#BD0B11;
+	--bg-color:			#332F31;
+	--text-color:		#C8C8C8;
+}
+
 div.panel {
 
-	background-color: #732426;
+	background-color: var(--panel-inactive);
 	
 	margin: auto;
 	overflow: hidden;
@@ -50,12 +58,12 @@ div.navbar {
 	text-shadow: 0 0 5px #000000;
 	text-decoration: none;
 
-	color: #C8C8C8;
+	color: var(--text-color);
 }
 
 .navbar a:hover {
 
-	background-color: #BD0B11;
+	background-color: var(--panel-active);
 	/* color: #000000; */
 
 }
@@ -69,7 +77,7 @@ div.navbar {
 	height: 75px;
 	width: 0.5%;
 	
-	background-color: #732426;
+	background-color: var(--panel-inactive);
 	
 	border-radius: 50px;
 
@@ -90,7 +98,7 @@ footer > a {
 
 	display: block;
 
-	color: #787878;
+	color: var(--text-color);
 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: small;
