@@ -13,7 +13,43 @@
 	</div>
 </head>
 
-<meta http-equiv="refresh" content="0; url = /about" />
+<script>
+
+	var CENTERMARGIN = 0.5;
+
+	function enlargeContentPanel() {
+		var ret = [];
+
+		var elms = document.getElementsByClassName("content panel");
+
+		for(var i = 0; i < elms.length; i ++){
+			var rect = elms[i].getBoundingClientRect();
+			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			
+			if(!(rect.bottom < viewHeight * CENTERMARGIN || rect.top  > viewHeight * CENTERMARGIN)){ // TWEAK
+				elms[i].style="background-color: #BD0B11; height: 500px; width: 75%"
+			}
+			else{
+				elms[i].style="";
+			}
+		}
+
+		return ret;
+	}
+
+	window.onload = enlargeContentPanel
+	window.onscroll = enlargeContentPanel;
+
+</script>
+
+<body>
+
+	<div class="content-holder">
+		<div class="content panel"></div>
+		<div class="content panel"></div>
+		<div class="content panel"></div>
+	</div>
+</body>
 
 <footer>
 	<a>Design by Yoel Kastro</a>
