@@ -88,9 +88,44 @@ div.content {
 	width: 65%;
 	height: 400px;
 
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-
 	margin-top: 2%;
+
+	transition: background-color 0.5s ease-in-out, 
+				color 0.5s ease-in-out, 
+				width 0.5s ease-in-out, 
+				height 0.5s ease-in-out, 
+				font-size 0.5s ease-in-out;
+
+}
+
+.content > img {
+
+	display: block;
+	float: left;
+	width: 45%;
+
+	border-color: #732426;
+	border-style: solid;
+	border-width: 3px;
+
+	margin: 3% 3% 2% 3%;
+
+}
+
+.content > p {
+
+	color: var(--text-color);
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 104%;
+
+	line-height: 120%;
+	text-indent: 2%;
+
+	margin: 3%;
+
+	text-shadow: 0 0 5px #000000;
+
 
 }
 
