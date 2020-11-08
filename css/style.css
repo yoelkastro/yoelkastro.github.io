@@ -98,7 +98,7 @@ div.content {
 
 }
 
-.content > img {
+div.content > img {
 
 	display: block;
 	float: left;
@@ -112,7 +112,7 @@ div.content {
 
 }
 
-.content > p {
+div.content > p {
 
 	color: var(--text-color);
 
