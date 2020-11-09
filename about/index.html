@@ -4,13 +4,7 @@
 <link rel="stylesheet" href="/css/style.css">
 
 <head>
-	<div class="navbar panel">
-
-		<a href="/about">About Me</a> <div class="separator"></div>
-		<a>Projects</a> <div class="separator"></div>
-		<a>Blog</a>
-
-	</div>
+	
 </head>
 
 <script>
@@ -18,6 +12,7 @@
 	var CENTERMARGIN = 0.5;
 
 	function enlargeContentPanel() {
+
 		function enlarge(element){
 			element.style="background-color: #BD0B11; height: 500px; width: 75%; font-size: 115%;"
 		}
@@ -50,15 +45,22 @@
 	if(!isMobile){
 		window.onscroll = enlargeContentPanel;
 	}
-	window.onload = enlargeContentPanel;
 
 </script>
 
-<body>
+<body id="body" onload="document.getElementById('body').style = 'opacity: 1;'; enlargeContentPanel();">
+
+	<div class="navbar panel">
+
+		<a href="/about">About Me</a> <div class="separator"></div>
+		<a>Projects</a> <div class="separator"></div>
+		<a>Blog</a>
+
+	</div>
 
 	<div class="content-holder">
 		<div class="content panel">
-			<img src="/img/IMG_2542.JPG" style="width:45%;">
+			<img src="/img/IMG_2542.JPG">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Consequat mauris nunc congue nisi vitae suscipit tellus. Augue mauris augue neque gravida. Integer enim neque volutpat ac tincidunt vitae semper. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Elit ullamcorper dignissim cras tincidunt. Aliquet nibh praesent tristique magna sit amet. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Ultrices tincidunt arcu non sodales neque sodales. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Erat velit scelerisque in dictum non consectetur.</p>
 		</div>
 		<div class="content panel"></div>
